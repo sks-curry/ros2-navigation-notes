@@ -3,7 +3,7 @@ layout: home
 hero:
   name: ROS 2 · Nav2 · VLN
   text: 机器人导航与视觉语言导航
-  tagline: 8 周从基础、SLAM、Nav2 到真机实验和 VLN 的学习路线
+  tagline: 基于 ROS 2 Humble，从导航基线、Python 任务到视觉语言与底盘衔接
   actions:
     - theme: brand
       text: 开始学习
@@ -22,6 +22,6 @@ features:
     details: A* 和 Nav2 插件
     link: /navigation/path-planning
   - title: VLN 与真机
-    details: 语义导航、软硬件部署和实验
-    link: /vln/introduction
+    details: 分清 VLN 决策、Nav2 导航和底盘控制
+    link: /vln/humble-integration
 ---

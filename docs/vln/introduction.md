@@ -1,5 +1,7 @@
 # 视觉语言导航（VLN）
 
+> 当前环境已确认：ROS 2 Humble。优先完成单点导航、Python 三点巡航，再接语义目标；A* 插件为研究支线。参阅 [Humble：VLN 与底层衔接](/vln/humble-integration)。跨版本教程仅参考概念，API 和参数以 Humble 分支为准。
+
 ### 第 8 周｜VLN / 语义导航原型
 
 - [ ] 输入“去椅子旁”，先提取目标类别。

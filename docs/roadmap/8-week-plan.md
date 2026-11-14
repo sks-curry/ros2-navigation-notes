@@ -1,5 +1,7 @@
 # ROS 2 / VLN 八周学习计划
 
+> 当前环境已确认：ROS 2 Humble。优先完成单点导航、Python 三点巡航，再接语义目标；A* 插件为研究支线。参阅 [Humble：VLN 与底层衔接](/vln/humble-integration)。跨版本教程仅参考概念，API 和参数以 Humble 分支为准。
+
 > 本页源自 [Notion 学习笔记](https://juniper-selenium-d99.notion.site/414e4d9d57e68120bd24e9d96062b590)
 
 <quote>
@@ -77,7 +79,7 @@
 
 验收：解释“目标点 → 规划器 → 控制器 → 速度命令”的流程。实验中每次只改一个主要因素。
 
-资料：[Nav2 官方仓库](https://github.com/ros-navigation/navigation2)；[Nav2 配置指南](https://docs.nav2.org/jazzy/configuration_and_development/configuration_guide/)；[Nav2 插件列表](https://docs.nav2.org/jazzy/configuration_and_development/navigation_plugins/)。
+资料：[Nav2 官方仓库](https://github.com/ros-navigation/navigation2/tree/humble)；[Nav2 配置指南](https://docs.nav2.org/jazzy/configuration_and_development/configuration_guide/)；[Nav2 插件列表](https://docs.nav2.org/jazzy/configuration_and_development/navigation_plugins/)。
 
 ### 第 4 周｜真机底层与导航
 
@@ -168,7 +170,7 @@
 | 1 | 第 1 周 | [ros2/examples](https://github.com/ros2/examples)：运行并改写 Python、C++ 发布与订阅示例 | 写一个发布、订阅节点，能用命令查看话题 |
 | 2 | 第 1–2 周 | [Nav2 最小 TurtleBot 仿真](https://github.com/ros-navigation/nav2_minimal_turtlebot_simulation)：按发行版选分支；或选匹配版本的 [TurtleBot3 仿真](https://github.com/ROBOTIS-GIT/turtlebot3_simulations) | 启动 Gazebo / RViz，观察雷达、里程计和 TF |
 | 3 | 第 2 周 | [SLAM Toolbox](https://github.com/SteveMacenski/slam_toolbox)：在步骤 2 的机器人上运行建图；[官方 SLAM 教程](https://docs.nav2.org/lyrical/tutorials/general_tutorials/navigation2_with_slam/navigation2_with_slam/) | 保存并加载地图，完成 AMCL 定位 |
-| 4 | 第 3 周 | [Nav2](https://github.com/ros-navigation/navigation2)：[Jazzy 快速入门](https://ros-navigation.github.io/mkdocs.nav2.org/jazzy/getting_started/quickstart/quickstart/) | 点到点导航；看路径、代价地图和速度；比较 DWB / RPP |
+| 4 | 第 3 周 | [Nav2](https://github.com/ros-navigation/navigation2/tree/humble)：[Jazzy 快速入门](https://ros-navigation.github.io/mkdocs.nav2.org/jazzy/getting_started/quickstart/quickstart/) | 点到点导航；看路径、代价地图和速度；比较 DWB / RPP |
 | 5 | 第 4 周 | [Linorobot2](https://github.com/linorobot/linorobot2) 或实际机器人厂商仓库：重点读底盘、通信、里程计、雷达和 launch | 有兼容硬件：低速完成短距离真机导航；否则先阅读接口并继续仿真 |
 | 6 | 第 5 周 | [PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics)：只学 A\* 路径规划示例 | 说清 open / closed、代价函数，自己在栅格地图实现 A\* |
 | 7 | 第 5–6 周 | [Nav2 Jazzy 自定义规划器教程](https://ros-navigation.github.io/mkdocs.nav2.org/jazzy/tutorials/plugin_tutorials/writing_new_planner_plugin/writing_new_planner_plugin/)：学习直线规划插件 | 编译加载插件；掌握接口、注册及 YAML 配置 |

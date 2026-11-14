@@ -12,7 +12,7 @@ export default defineConfig({
       { text: '学习路线', items: [{ text: '8 周学习计划', link: '/roadmap/8-week-plan' }, { text: 'Notion 同步笔记', link: '/notion-sync/ros2-vln' }] },
       { text: 'ROS 2', items: [{ text: '基础', link: '/ros2/basics' }, { text: '环境', link: '/ros2/environment' }, { text: '常用命令', link: '/ros2/commands' }] },
       { text: '导航系统', items: [{ text: 'SLAM 与定位', link: '/navigation/slam' }, { text: 'Nav2', link: '/navigation/nav2' }, { text: '自定义规划', link: '/navigation/path-planning' }] },
-      { text: '实践与进阶', items: [{ text: '真机导航', link: '/robot/real-robot' }, { text: '论文实验', link: '/robot/experiments' }, { text: 'VLN', link: '/vln/introduction' }, { text: '开源项目', link: '/projects/open-source' }] }
+      { text: '实践与进阶', items: [{ text: '真机导航', link: '/robot/real-robot' }, { text: '论文实验', link: '/robot/experiments' }, { text: 'VLN', link: '/vln/introduction' }, { text: 'Humble：VLN 与底层衔接', link: '/vln/humble-integration' }, { text: '开源项目', link: '/projects/open-source' }] }
     ],
     search: { provider: 'local' },
     socialLinks: [{ icon: 'github', link: 'https://github.com/sks-curry/ros2-navigation-notes' }],
